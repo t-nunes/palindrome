@@ -1,0 +1,48 @@
+<?php
+    session_start();
+
+    $murl = explode('/',$_SERVER[REQUEST_URI]);
+
+    array_shift($murl);
+    array_shift($murl);
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="myApp">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Palindrome app checker - Shaw and Partners</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta name="MobileOptimized" content="380">
+    <meta name="HandheldFriendly" content="True">
+
+    <!--
+        Defalt font - Droid Sans
+    -->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'>
+
+    <!-- Main Style of website -->
+    <link rel="stylesheet" href="css/app.css"/>
+
+</head>
+<body>
+    <div class="palindrome-checker">
+        <input type="text" class="check-palindrome"/>
+
+        <div class="msg-container">
+            <p>IS A PALINDROME</p>
+        </div>
+    </div>
+</body>
+
+
+<!-- jQuery-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+<!-- Main js of project -->
+<script src="js/app.js"></script>
+
+</html>

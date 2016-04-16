@@ -1,0 +1,52 @@
+/* Font */
+@font-size: 16px;
+@font-sans-serif: 'Droid Sans', 'Open Sans', 'Arial', sans-serif;
+
+/* Layout */
+@brekpointMobile: @screen-sm;
+@brekpointTablet: @screen-md;
+@brekpointDesktop: @screen-lg;
+
+@media-mobile:      ~"only screen and (max-width: " (@brekpointMobile - 1px) ~")";
+@media-tablet:      ~"only screen and (min-width: " @brekpointMobile ~") and (max-width: " (@brekpointTablet - 1px) ~")";
+@media-desktop:     ~"only screen and (min-width: " @brekpointTablet ~") and (max-width: " (@brekpointDesktop - 1px) ~")";
+@media-desktop-xl:  ~"only screen and (min-width: " @brekpointDesktop ~")";
+
+@width-site: 1200px;
+
+@border-color: #DEDEDE;
+@border-radius: 3px;
+
+/* Colors */
+@color-border: @border-color;
+
+@color-white-primary: #FFFFFF;
+@color-white-secondary: fade(@color-white-primary,56%);
+
+@color-dark-primary: #3a3a3a;
+@color-dark-secondary: fade(@color-dark-primary,56%);
+
+/* Brand Colors */
+@color-facebook: #3b5998;
+@color-twitter: #55acee;
+@color-google-plus: #dc4e41;
+
+/*
+    Bootstrap
+*/
+@import "bootstrap/variables";
+@import "bootstrap/custom-variables.less";
+
+@import "bootstrap/mixins";
+@import "bootstrap/grid";
+@import "bootstrap/responsive-utilities";
+
+/*
+    Layout Project
+*/
+@import "layout";
+
+
+
+/* Components */
+@import "components/input";
